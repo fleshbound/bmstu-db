@@ -4,10 +4,10 @@ import psycopg2
 
 class ConfigSQL:
     def __init__(self):
-        self.CREATE_FILE = "/var/lib/postgresql/bmstu/01/sql/create_tables.sql"
-        self.DROP_FILE = "/var/lib/postgresql/bmstu/01/sql/drop_tables.sql"
-        self.COPY_FILE = "/var/lib/postgresql/bmstu/01/sql/copy_tables.sql"
-        self.CONSTRAINTS_FILE = "/var/lib/postgresql/bmstu/01/sql/constraints.sql"
+        self.CREATE_FILE = "/home/sheglar/bmstu/db/lab_01/sql/create_tables.sql"
+        self.DROP_FILE = "/home/sheglar/bmstu/db/lab_01/sql/drop_tables.sql"
+        self.COPY_FILE = "/home/sheglar/bmstu/db/lab_01/sql/copy_tables.sql"
+        self.CONSTRAINTS_FILE = "/home/sheglar/bmstu/db/lab_01/sql/constraints.sql"
 
 
 class DataBase:

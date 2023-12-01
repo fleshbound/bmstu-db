@@ -8,11 +8,11 @@ import random
 
 class ClientMailingInfoGenerator:
     def __init__(self, rows=1000):
-        self.CLIENTS_FILE = "./data/clients_info.csv"
-        self.COMPANIES_FILE = "./data/companies_info.csv"
-        self.MAILINGS_FILE = "./data/mailings_info.csv"
-        self.MAILINGSERVICES_FILE = "./data/mailingservices_info.csv"
-        self.MAILINGSUBSCRIPTIONS_FILE = "./data/mailingsubsriptions_info.csv"
+        self.CLIENTS_FILE = "../data/clients_info.csv"
+        self.COMPANIES_FILE = "../data/companies_info.csv"
+        self.MAILINGS_FILE = "../data/mailings_info.csv"
+        self.MAILINGSERVICES_FILE = "../data/mailingservices_info.csv"
+        self.MAILINGSUBSCRIPTIONS_FILE = "../data/mailingsubsriptions_info.csv"
         self.ROWS = rows
 
         self.fake = faker.Faker()
