@@ -1,5 +1,5 @@
 -- Инструкция SELECT, использующая рекурсивное обобщенное табличное выражение.
--- любимые клиенты 3 уровня начиная с клиента 727
+-- любимые клиенты 3 уровня начиная с клиента 100
 with recursive client_like(id, name, favourite_client_id, level) as (
     -- корень
     select id, name, favourite_client_id, 0
@@ -13,4 +13,4 @@ with recursive client_like(id, name, favourite_client_id, level) as (
 )
 select *
 from client_like
-where level = 3;
+where level = 5;
