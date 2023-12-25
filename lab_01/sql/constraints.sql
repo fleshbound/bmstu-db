@@ -12,8 +12,7 @@ alter table Clients
     alter column sum_purchase_dollars set not null,
     add check (name != ''),
     add check (email != ''),
-    add check (sum_purchase_dollars >= 0),
-    add check (age >= 13 and age <= 100);
+    add check (sum_purchase_dollars >= 0);
 
 create sequence mailingservices_id_seq owned by MailingServices.id;
 alter table MailingServices
